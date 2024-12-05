@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "sequelize-cli": "^6.6.2",
+    "typescript": "^5.7.2"
+  }
+}

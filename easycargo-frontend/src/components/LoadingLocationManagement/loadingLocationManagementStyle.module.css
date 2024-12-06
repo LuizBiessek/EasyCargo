@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+    padding: 1rem;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .card:hover {
+    background-color: #2c2c2c;
+  }
+  
+  .cardDetails {
+    flex: 1;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .deleteButton {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .deleteButton:hover {
+    background-color: #ff1a1a;
+  }
+  
+  .formCard {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 70%; /* Ocupa 70% da largura */
+    margin: 0 auto;
+  }
+  
+  .formLabel {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 0.4rem; /* Mais compacto verticalmente */
+    font-size: 0.9rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
+  .addButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem; /* Botão mais compacto */
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .addButton:hover {
+    background-color: #0056b3;
+  }
+  

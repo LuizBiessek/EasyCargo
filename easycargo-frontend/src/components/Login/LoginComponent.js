@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
-import './loginStyle.css';
+import styles from './loginStyle.module.css';
 
-const Login = ({ onLogin }) => {
+const LoginComponent = ({ onLogin }) => {
   const [cpfCnpj, setCpfCnpj] = useState('');
 
-  const handleLogin = async (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (!cpfCnpj) {
-      alert('Por favor, insira o CPF/CNPJ.');
+      alert('Por favor, insira seu CPF/CNPJ.');
       return;
     }
-    await onLogin(cpfCnpj);
+    onLogin(cpfCnpj);
   };
 
   return (
-    <div className="login-container">
-      <form onSubmit={handleLogin} className="login-form">
-        <h1>Login</h1>
+    <div className={styles.loginContainer}>
+      <form className={styles.loginForm} onSubmit={handleSubmit}>
+        <h1 className={styles.title}>Login</h1>
         <input
           type="text"
           placeholder="Digite seu CPF/CNPJ"
           value={cpfCnpj}
           onChange={(e) => setCpfCnpj(e.target.value)}
-          className="login-input"
+          className={styles.loginInput}
         />
-        <button type="submit" className="login-button">
+        <button type="submit" className={styles.loginButton}>
           Entrar
         </button>
       </form>
@@ -32,4 +32,4 @@ const Login = ({ onLogin }) => {
   );
 };
 
-export default Login;
+export default LoginComponent;

@@ -1,0 +1,84 @@
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .vehicleList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vehicleCard {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .vehicleCard p {
+    margin: 5px 0;
+  }
+  
+  .deleteButton {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c9302c;
+  }
+  
+  .newVehicleForm {
+    background-color: #292929;
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .newVehicleForm h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .newVehicleForm input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .addButton {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .addButton:hover {
+    background-color: #4cae4c;
+  }
+  

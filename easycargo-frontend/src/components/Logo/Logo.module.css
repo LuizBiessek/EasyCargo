@@ -1,0 +1,17 @@
+.logoContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: 0 0 2px #fff;
+}
+
+.easy {
+  color: green;
+  margin-right: 0.5rem;
+}
+
+.cargo {
+  color: red;
+}
